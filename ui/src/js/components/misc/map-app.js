@@ -23,6 +23,7 @@ import {getData, fetchData, pause} from './actions';
 
 const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
 
+
 class App extends Component {
 
   componentDidMount() {
