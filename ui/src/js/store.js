@@ -8,21 +8,21 @@ import {hashHistory} from 'react-router';
 import reducers from './reducers/reducers';
 
 export const middlewares = [
-  taskMiddleware,
-  routerMiddleware(hashHistory),
-  thunkMiddleware
+    taskMiddleware,
+    routerMiddleware(hashHistory),
+    thunkMiddleware
 ];
 
 export const enhancers = [applyMiddleware(...middlewares)];
 
 const initialAppState = {
-  appName: 'Accelerate Drone Race',
-  primaryColor: '#1AB5E0',
-  viewport: {
-    width: "100%",
-    height: "100%"
-  },
-  qrCode: "scan qr code"
+    appName: 'Geofinder API',
+    primaryColor: '#1AB5E0',
+    viewport: {
+        width: "100%",
+        height: "100%"
+    },
+    qrCode: "scan qr code"
 };
 
 const initialState = {

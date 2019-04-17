@@ -16,48 +16,51 @@ import Admin from './Admin';
 import MenuContainer from './Menu';
 
 const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#1AB5E0',
+    palette: {
+        primary: {
+        main: '#1AB5E0',
+        },
+        secondary: {
+        main: '#ca5f14',
+        },
     },
-    secondary: {
-      main: '#ca5f14',
+    typography: {
+        useNextVariants: true,
     },
-  },
 });
 
 class App extends Component {
-  render() {
-   theme.palette.primary.main = this.props.app.primaryColor;
-   return (
-      <MuiThemeProvider theme={theme}>
-          <Grid>
-          <MenuContainer/>
-          <Grid className="basepage">
-        {
-        this.props.NavigationReducer.page === 'Home' ?
-          <HomePage/>
-        :
-        null
-        }
-        {
-        this.props.NavigationReducer.page === 'Dashboard' ?
-          <Dashboard/>
-        :
-        null
-        }
-        {
-        this.props.NavigationReducer.page === 'Admin' ?
-          <Admin/>
-        :
-        null
-        }
- 
+    render() {
+        theme.palette.primary.main = this.props.app.primaryColor;
+    return (
+        <MuiThemeProvider theme={theme}>
+            <Grid>
+            <MenuContainer/>
+            <Grid className="basepage">
+            {
+            this.props.NavigationReducer.page === 'Home' ?
+            <HomePage/>
+            :
+            null
+            }
+            {
+            this.props.NavigationReducer.page === 'Dashboard' ?
+            <Dashboard/>
+            :
+            null
+            }
+            {
+            this.props.NavigationReducer.page === 'Admin' ?
+            <Admin/>
+            :
+            null
+            }
+    
+            </Grid>
         </Grid>
-      </Grid>
-      </MuiThemeProvider>
-    );
-  }
+        </MuiThemeProvider>
+        );
+    }
 }
 
 

@@ -45,7 +45,7 @@ class Menu extends React.Component{
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
-            <InputBase
+            {/* <InputBase
               placeholder="Search…"
               //value={ this.props.currentTransaction }
               //onChange={(e) => this.props.updateCurrentTransaction("currentTransaction", e.target.value) }
@@ -53,7 +53,7 @@ class Menu extends React.Component{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
-            />
+            /> */}
           </div>
         </Toolbar>
       </AppBar>

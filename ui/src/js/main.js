@@ -10,11 +10,13 @@ import App from './components/app';
 const history = syncHistoryWithStore(hashHistory, store);
 
 const Root = () => (
-  <Provider store={store}>
-    <Router history={history}>
-      <Route path="/" component={App} />
-    </Router>
-  </Provider>
+    <Provider store={store}>
+        <Router history={history}>
+        <Route path="/" component={App} />
+        </Router>
+    </Provider>
 );
+
+
 
 render(<Root />, document.body.appendChild(document.createElement('div')));

@@ -6,17 +6,17 @@ import style from '../../css/style.css';
 
 export default class HomePage extends PureComponent {
 
-  render() {
-    return (
-       <div className="container">
-          <br />
-          <Typography variant="h5" color="inherit" >
-             Many will race, one shall win.
-          </Typography>
-          <br />
-          <Paper className="paper" elevation={1}>
-          </Paper>
-        </div>
-    );
-  }
+    render() {
+        return (
+        <div className="container">
+            <br />
+            <Typography variant="h5" color="inherit" >
+                Many will race, one shall win.
+            </Typography>
+            <br />
+            <Paper className="paper" elevation={1}>
+            </Paper>
+            </div>
+        );
+    }
 }
