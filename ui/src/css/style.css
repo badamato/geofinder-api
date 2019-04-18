@@ -45,7 +45,8 @@
     padding: 3%;
     position:relative;
     min-height: 700px;
-    background-image: url(../img/stax.png);
+    /* background-image: url(../img/stax.png); */
+    background-color: #f8f8f8;
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -56,13 +57,13 @@
 }
 .
 .app p {
-  color: blue;
+    color: blue;
 }
 .overflow-holder{
     overflow: auto;
     min-height:700px;
 }
 body {
-  overflow-y: scroll;
-  overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
