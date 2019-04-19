@@ -9,11 +9,11 @@ export default class HomePage extends PureComponent {
     render() {
         return (
         <div className="container">
-            <br />
+            {/* <br />
             <Typography variant="h5" color="inherit" >
                 Many will race, one shall win.
             </Typography>
-            <br />
+            <br /> */}
             <Paper className="paper" elevation={1}>
             </Paper>
             </div>

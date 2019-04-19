@@ -12,9 +12,10 @@ CREATE TABLE simplegeo.locations (
     phone text,
     post_code text,
     province text,
+    solr_query text,
     source text,
     subcategory text,
-    tags list<text>,
+    tags text,
     type text,
     website text
 );
