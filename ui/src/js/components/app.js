@@ -1,8 +1,6 @@
 //React/Redux
 import {connect} from 'react-redux';
 import React, { Component } from 'react'
-import green from '@material-ui/core/colors/green';
-
 
 
 //MUI
@@ -55,7 +53,6 @@ class App extends Component {
             :
             null
             }
-    
             </Grid>
         </Grid>
         </MuiThemeProvider>
@@ -68,4 +65,3 @@ const mapStateToProps = state => state;
 const dispatchToProps = dispatch => ({dispatch});
 
 export default connect(mapStateToProps, dispatchToProps)(App);
-//export default connect(mapStateToProps, mapDispatchToProps)(App);

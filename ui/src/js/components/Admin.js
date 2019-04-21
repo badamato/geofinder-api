@@ -18,67 +18,62 @@ import style from '../../css/style.css';
 import {updateValue} from '../actions/actions';
 
 class Admin extends PureComponent {
-  componentWillMount() {
-    this.props.init();
-  }
+    componentWillMount() {
+        this.props.init();
+    }
 
-
-
-  render() {
+render() {
     var uniqueProperties = [];
     return (
-      <Paper className="paper" elevation={1}>
-        <div className="inside-container">
-          <Typography variant="h6" color="inherit" noWrap>
-            Admin Controls:
-          </Typography>
-          <div>
-                  <TextField
-                    id="standard-full-width"
-                    label="App Name"
-                    style={{ margin: 8 }}
-                    placeholder="App Name"
-                    fullWidth
-                    margin="normal"
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                  />
-
-              </div>
-
-          <Typography variant="h6" color="inherit" noWrap>
-            Buttons:
-          </Typography>
-          <div>
-            <br/>
-
+        <Paper className="paper" elevation={1}>
+            <div className="inside-container">
+            <Typography variant="h6" color="inherit" noWrap>
+                Admin Controls:
+            </Typography>
             <div>
-              <Fab variant="extended" onClick={(e) => { console.log("button clicked") }}>
-                Example button
-              </Fab>
+                    <TextField
+                        id="standard-full-width"
+                        label="App Name"
+                        style={{ margin: 8 }}
+                        placeholder="App Name"
+                        fullWidth
+                        margin="normal"
+                        InputLabelProps={{
+                        shrink: true,
+                        }}
+                    />
+            </div>
+            <Typography variant="h6" color="inherit" noWrap>
+                Buttons:
+            </Typography>
+            <div>
+                <br/>
+                <div>
+                <Fab variant="extended" onClick={(e) => { console.log("button clicked") }}>
+                    Example button
+                </Fab>
+                </div>
             </div>
         </div>
-      </div>
-    </Paper>
-    );
-  }
+        </Paper>
+        );
+    }
 }
 
 const mapStateToProps = (state, ownProps) => {
-  return {
-    app: state.app,
-  }
+    return {
+        app: state.app,
+    }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    init: () => {
-    },
-    updateValue : (key, value) => {
-      dispatch(updateValue(key, value))
+    return {
+        init: () => {
+        },
+        updateValue : (key, value) => {
+        dispatch(updateValue(key, value))
+        }
     }
-  }
 }
 
 
