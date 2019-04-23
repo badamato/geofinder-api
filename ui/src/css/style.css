@@ -24,9 +24,10 @@
     min-height: 150px;
 }
 .search-paper {
+    padding-top: 30px;
     margin-bottom: 2%;
     width: 30%;
-    min-height: 960px;
+    min-height: 933px;
 }
 .half-paper {
     margin: 4.5%;
@@ -80,4 +81,41 @@
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.grow {
+    flex-grow: 1;
+}
+.search {
+    margin: 0 15px;
+    display: flex;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+}
+.search:hover {
+    background-color: #b2b2b2;
+}
+.searchIcon {
+    margin-left: 25%;
+    margin-top: 6px;
+    position: fixed;
+    pointer-events: none;
+    color: #999999;
+}
+/* inputRoot: {
+    color: 'inherit',
+    width: '100%',
+} */
+.inputInput {
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    transition: width 2s;
+    width: 80%;
+        /* [theme.breakpoints.up('sm')]: {
+            width: 120,
+            '&:focus': {
+            width: 200,
+            },
+        }, */
 }

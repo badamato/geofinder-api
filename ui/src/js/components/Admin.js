@@ -24,6 +24,7 @@ class Admin extends PureComponent {
 
 render() {
     var uniqueProperties = [];
+    
     return (
         <Paper className="paper" elevation={1}>
             <div className="inside-container">
