@@ -7,14 +7,26 @@
 .side-grid{
     width:20%;
 }
-.paper {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 2%;
-    margin-left: 30%;
-    width:75%;
+.map-paper {
+    position: absolute;
+    top: 8px;
+    margin-bottom: 1%;
+    margin-left: 30.5%;
+    width: 70%;
     min-height: 800px;
-    /*background-image: linear-gradient(#081846,#307ccd, #858ce6, #0F2C62);*/
+}
+.cql-paper {
+    position: absolute;
+    top: 820px;
+    margin-bottom: 2%;
+    margin-left: 30.5%;
+    width:70%;
+    min-height: 150px;
+}
+.search-paper {
+    margin-bottom: 2%;
+    width: 30%;
+    min-height: 960px;
 }
 .half-paper {
     margin: 4.5%;
@@ -47,8 +59,7 @@
 .container {
     padding: .5%;
     position:relative;
-    min-height: 1200px;
-    /* background-image: url(../img/stax.png); */
+    min-height: 1000px;
     background-color: #f8f8f8;
     background-repeat: no-repeat;
     background-position: right top;

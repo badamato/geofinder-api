@@ -14,7 +14,11 @@ export default class HomePage extends PureComponent {
                 Many will race, one shall win.
             </Typography>
             <br /> */}
-            <Paper className="paper" elevation={1}>
+            <Paper className="search-paper" elevation={1}>
+            </Paper>
+            <Paper className="map-paper" elevation={1}>
+            </Paper>
+            <Paper className="cql-paper" elevation={1}>
             </Paper>
             </div>
         );
