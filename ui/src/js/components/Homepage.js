@@ -27,6 +27,7 @@ class HomePage extends PureComponent {
 
         return (
         <div className='container'>
+        <Grid>
             <Paper className='search-paper'>
                 <div className='searchIcon'>
                     <SearchIcon />
@@ -58,6 +59,7 @@ class HomePage extends PureComponent {
 
             <Paper className="cql-paper" elevation={1}>
             </Paper>
+        </Grid>
         </div>
         );
     }

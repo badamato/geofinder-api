@@ -99,6 +99,18 @@ content: {
     flexGrow: 1,
     padding: theme.spacing.unit * 3,
 },
+logo: {
+    flex: 1,
+    margin: 0,
+},
+title: {
+    flex: 1,
+    textAlign: 'right',
+    color: 'white',
+},
+subtitle: {
+    marginBottom: '10px',
+},
 // search: {
 //     position: 'relative',
 //     borderRadius: theme.shape.borderRadius,
@@ -158,7 +170,10 @@ return(
         <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
             <MenuIcon />
         </IconButton>
-        <Typography className={classes.title} variant="h6" color="inherit" noWrap>
+        <div className={classes.logo}>
+                        <img style={{height: '62px'}} src={require('../../img/logo.png')} />
+                    </div>
+        <Typography className={classes.title} variant="h4" color="inherit" noWrap>
             {this.props.appName}
         </Typography>
         {/* <div className={classes.grow} />
