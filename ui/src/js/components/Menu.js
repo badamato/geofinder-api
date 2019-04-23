@@ -170,8 +170,8 @@ return(
         <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
             <MenuIcon />
         </IconButton>
-        <div className={classes.logo}>
-                        <img style={{height: '62px'}} src={require('../../img/logo.png')} />
+        <div style={{height: "60px"}} className={classes.logo}>
+                        <img style={{height: '60px', marginLeft: "20px"}} src={require('../../img/logo.png')} />
                     </div>
         <Typography className={classes.title} variant="h4" color="inherit" noWrap>
             {this.props.appName}
