@@ -171,7 +171,7 @@ return(
             <MenuIcon />
         </IconButton>
         <div style={{height: "60px"}} className={classes.logo}>
-                        <img style={{height: '60px', marginLeft: "20px"}} src={require('../../img/logo.png')} />
+                        <img style={{height: '57px', marginLeft: "20px"}} src={require('../../img/logo.png')} />
                     </div>
         <Typography className={classes.title} variant="h4" color="inherit" noWrap>
             {this.props.appName}

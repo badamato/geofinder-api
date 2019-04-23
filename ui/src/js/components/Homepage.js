@@ -29,7 +29,7 @@ class HomePage extends PureComponent {
         <div className='container'>
         <Grid>
             <Paper className='search-paper'>
-                <div className='searchIcon'>
+                <div style={{marginTop: "6px"}} className='searchIcon'>
                     <SearchIcon />
                 </div>
                 <div className='search'>

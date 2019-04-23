@@ -24,7 +24,6 @@
     min-height: 150px;
 }
 .search-paper {
-    /* padding-top: 30px; */
     padding: 30px 10px 0 10px;
     margin-bottom: 2%;
     width: 29%;
@@ -96,15 +95,10 @@ body {
 }
 .searchIcon {
     margin-left: 25%;
-    margin-top: 6px;
     position: fixed;
     pointer-events: none;
     color: #999999;
 }
-/* inputRoot: {
-    color: 'inherit',
-    width: '100%',
-} */
 .inputInput {
     padding-top: 2px;
     padding-right: 2px;
