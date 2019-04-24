@@ -15,7 +15,7 @@ CREATE TABLE simplegeo.locations (
     solr_query text,
     source text,
     subcategory text,
-    tags text,
+    tags list<text>,
     type text,
     website text
 );
