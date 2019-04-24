@@ -21,6 +21,13 @@ const styles = theme => ({
     },
 });
 
+// const TOKEN = process.env.REACT_APP_MapboxAccessToken;
+const TOKEN = 'pk.eyJ1IjoiYmFkYW1hdG8iLCJhIjoiY2p1anZ6YTVkMXBzZTQ0dWpheGF4ODF6dyJ9.KglfXQnMkcHnkKPyr-ZkXw';
+const LONG = -84.386330;
+const LAT = 33.753746;
+const ZOOM = 11;
+// const STYLE_ID = ""
+
 
 class HomePage extends PureComponent {
 
@@ -59,8 +66,13 @@ class HomePage extends PureComponent {
             </Paper>
 
             <Paper className="map-paper" elevation={1}>
-            <ReactMap />
-
+            <ReactMap 
+                token= { TOKEN}
+                longitude= { LONG }
+                latitude= { LAT }
+                zoom= { ZOOM }
+                // styleID= { STYLE_ID }
+                />
             </Paper>
 
             <Paper className="cql-paper" elevation={1}>

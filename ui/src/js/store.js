@@ -21,23 +21,22 @@ const initialAppState = {
     viewport: {
         width: "100%",
         height: "100%"
-    },
-    qrCode: "scan qr code"
+    }
 };
 
 const initialState = {
-  app: initialAppState,
-  NavigationReducer: {
-    drawerOpen: false,
-    page: "Home"
-  }
+    app: initialAppState,
+    NavigationReducer: {
+        drawerOpen: false,
+        page: "Home"
+    }
 }
 
 // add redux devtools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export default createStore(
-  reducers,
-  initialState,
-  composeEnhancers(...enhancers)
+    reducers,
+    initialState,
+    composeEnhancers(...enhancers)
 );
