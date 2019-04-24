@@ -113,3 +113,9 @@ body {
             },
         }, */
 }
+
+.cql-field {
+    background-color: #e5e5e5;
+    width: 80%;
+    margin: 10px 5px 10px 30px;
+}

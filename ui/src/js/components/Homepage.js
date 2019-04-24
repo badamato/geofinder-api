@@ -1,8 +1,9 @@
 import React, {PureComponent} from 'react';
-// import Typography from '@material-ui/core/Typography';
+import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
 import SearchIcon from '@material-ui/icons/Search';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -52,12 +53,26 @@ class HomePage extends PureComponent {
                         type="file"
                     />
                 </div>
+                <br />
+                <Divider variant="middle" />
             </Paper>
 
             <Paper className="map-paper" elevation={1}>
+            {/* insert map here!! */}
+
             </Paper>
 
             <Paper className="cql-paper" elevation={1}>
+                <div>
+                    <div className='cql-field'>
+                    <Typography variant="h4" gutterBottom>
+                        h4. Heading
+                    </Typography>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
             </Paper>
         </Grid>
         </div>
