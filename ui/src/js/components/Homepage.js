@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import SearchIcon from '@material-ui/icons/Search';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Map from './ReactMap'
+import ReactMap from './ReactMap'
 
 import style from '../../css/style.css';
 
