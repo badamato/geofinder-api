@@ -7,6 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import SearchIcon from '@material-ui/icons/Search';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Map from './ReactMap'
 
 import style from '../../css/style.css';
 
@@ -58,7 +59,7 @@ class HomePage extends PureComponent {
             </Paper>
 
             <Paper className="map-paper" elevation={1}>
-            {/* insert map here!! */}
+            <ReactMap />
 
             </Paper>
 
