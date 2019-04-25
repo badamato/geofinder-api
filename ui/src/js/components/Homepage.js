@@ -19,13 +19,26 @@ const styles = theme => ({
     input: {
         display: 'none',
     },
+    mapContainer: {
+        display: 'flex',
+        position: 'absolute',
+        top: '8px',
+        marginBottom: '1%',
+        marginLeft: '30.5%',
+        width: '70%',
+        minHeight: '800px',
+    },
+    map: {
+        width: '100%',
+    
+    }
 });
 
 // const TOKEN = process.env.REACT_APP_MapboxAccessToken;
 const TOKEN = 'pk.eyJ1IjoiYmFkYW1hdG8iLCJhIjoiY2p1anZ6YTVkMXBzZTQ0dWpheGF4ODF6dyJ9.KglfXQnMkcHnkKPyr-ZkXw';
 const LONG = -84.386330;
 const LAT = 33.753746;
-const ZOOM = 11;
+const ZOOM = 12;
 // const STYLE_ID = ""
 
 
@@ -65,9 +78,9 @@ class HomePage extends PureComponent {
                 <Divider variant="middle" />
             </Paper>
 
-            <Paper className="map-paper" elevation={1}>
-            <ReactMap 
-                token= { TOKEN}
+            <Paper className={classes.mapContainer} elevation={1}>
+            <ReactMap className={classes.map}
+                token= { TOKEN }
                 longitude= { LONG }
                 latitude= { LAT }
                 zoom= { ZOOM }
